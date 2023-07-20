@@ -24,34 +24,12 @@ div {
      color: #FFF0F5;
 }
 
-input[id=[personal] {
-    width: 1em;
-}
-
-input[id=[small] {
-    width: 1em;
-}
-
-input[id=[medium] {
-    width: 1em;
-}
-
-input[id=[large] {
-    width: 1em;
-}
-
-input[id=[extra large] {
-    width: 1em;
-}
 
 
 
 
 
-label {
-    padding-left: 150px;
-    width: 5%;
-}
+
 
 
 
@@ -119,6 +97,3 @@ label {
     display: block;
     }
 
-#quantity {
-    width: 5%;
-}
