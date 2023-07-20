@@ -12,8 +12,6 @@
             <h1 style="margin:0 0px 0 20px;">Mario's Pizza</h1>
             <br>
             <form d="frmMenu">
-                <input id="btnOrder" type="button" onclick="getReceipt()"
-                        value="Place Order">
                 <div class="menu left">
                     <h3>Size:</h3>
                     <input class="size" type="radio" name="Size"
@@ -57,10 +55,11 @@
                     <input class="toppings" type="checkbox" name="Topping"
                         value="Spinach">Spinach<br>
                     <input class="toppings" type="checkbox" name="Topping"
-                        value="Banana Peppers">Banana Peppers
-                    
-                    
+                        value="Banana Peppers">Banana Peppers   
                 </div>
+                <br><br>
+                <input id="btnOrder" type="button" onclick="getReceipt()"
+                        value="Place Order">
                 
                 
                 <div id="cart">
