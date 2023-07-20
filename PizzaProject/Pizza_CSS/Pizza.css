@@ -94,3 +94,6 @@ label {
     display: block;
     }
 
+#quantity {
+    width: 25%;
+}
