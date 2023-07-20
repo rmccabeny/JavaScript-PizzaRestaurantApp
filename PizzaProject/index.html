@@ -79,17 +79,31 @@
                     </div>
                 </div>
                 <div class="menu right" >
-                    <h3>Vegetables:</h3>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Green Peppers">Green Peppers<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Onions">Onions<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Mushrooms">Mushrooms<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Spinach">Spinach<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Banana Peppers">Banana Peppers<br>
+                    <div>
+                        <input type="checkbox" id="green_peppers" name="toppings" value="Green Peppers">
+                        <label for="green_peppers">Green Peppers</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" id="qty_green_peppers" name="qty_green_peppers" value="0" min="0" style="width: 25px;">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="onions" name="toppings" value="Onions">
+                        <label for="onions">Onions</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" id="qty_onions" name="qty_onions" value="0" min="0" style="width: 25px;">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+                        <label for="mushrooms">Mushrooms</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" id="qty_mushrooms" name="qty_mushrooms" value="0" min="0" style="width: 25px;">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="spinach" name="toppings" value="Spinach">
+                        <label for="spinach">Spinach</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" id="qty_spinach" name="qty_spinach" value="0" min="0" style="width: 25px;">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="banana_peppers" name="toppings" value="Banana Peppers">
+                        <label for="banana_peppers">Banana Peppers</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" id="qty_banana_peppers" name="qty_banana_peppers" value="0" min="0" style="width: 25px;">
+                    </div>
                 </div>
                 <div>
                     <input id="btnOrder" type="button" onclick="getReceipt()"
