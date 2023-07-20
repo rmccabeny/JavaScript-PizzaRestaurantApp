@@ -89,3 +89,7 @@ div {
     margin-top: 4em;
     display: block;
     }
+
+#quantity {
+    text-align: center;
+}
