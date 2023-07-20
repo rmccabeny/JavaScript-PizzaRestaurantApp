@@ -78,5 +78,6 @@ div {
     width: 120px;
     height: 40px;
     text-align: center;
+    margin-right: -25px;
     display: block;
     }
