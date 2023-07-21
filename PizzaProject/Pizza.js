@@ -4,12 +4,6 @@ function getReceipt() {
     var sizeTotal = 0; // Declare sizeTotal here
   
     var sizeArray = document.getElementsByClassName("size");
-    var selectedSize;
-
-    
-
-
-  
     for (var i = 0; i < sizeArray.length; i++) {
       if (sizeArray[i],checked) {
         var selectedSize = sizeArray[i].value;
@@ -28,9 +22,9 @@ function getReceipt() {
       }
     }
   }
-      }
+}
        
-        // Move these conditional statements inside the checked block
+       
         
         
   
