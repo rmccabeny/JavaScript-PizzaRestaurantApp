@@ -32,10 +32,10 @@ function getReceipt() {
   console.log("subtotal: $" + runningTotal + ".00");
 
   // these variables will get passed on to each function
-  getTopping(runningTotal, text1, sizeTotal);
+  getTopping(runningTotal, text1, sizeTotal, selectedSize);
 }
 
-function getTopping(runningTotal, text1, sizeTotal) {
+function getTopping(runningTotal, text1, sizeTotal, selectedSize) {
   var selectedTopping = [];
   var pizzaQuantity = 0; // Initialize pizza quantity
 
