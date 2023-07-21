@@ -85,7 +85,7 @@ div {
     height: 200px;
     }
 
-#btnOrder   {
+.menu.right #btnOrder {
     font-weight: bold;
     font-size: medium;
     font-family: Open-Sans;
@@ -96,4 +96,5 @@ div {
     margin-top: 50px;
     display: block;
     }
+      
 
