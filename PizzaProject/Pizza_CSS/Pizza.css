@@ -79,4 +79,26 @@ body {
     margin-top: 50px;
     display: block;
   }
+
+  /* Existing CSS styles */
+
+/* Add CSS for each column */
+.menu.column-left {
+    width: 30%; /* Adjust the width of the left column */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .menu.column-center {
+    width: 30%; /* Adjust the width of the center column */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .menu.column-right {
+    width: 30%; /* Adjust the width of the right column */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
   
