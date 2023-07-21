@@ -56,17 +56,15 @@ input[type="number"] {
     align-items: center;
     justify-content: space-between;
     white-space: nowrap; /* Prevent line breaks within the item and quantity box container */
-    width: 100%;
 }
 
-.qty {
-    width: 100%;
-    text-align: center;
-    margin-top: 5px; /* Add some spacing between the item and quantity box */
+.item label {
+    flex: 1; /* Allow the label to take up the remaining space */
 }
 
+/* Move the quantity boxes to the right using margin-left */
 .column input[type="number"] {
-    margin-top: 5px; /* Adjust margin for quantity boxes */
+    margin-left: 10px;
 }
 
 #btnOrder {
@@ -95,10 +93,9 @@ input[type="number"] {
 #totalPrice {
     margin-top: 10px;
     text-align: center;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", sans-serif; /* Add the font-family property */
     font-size: 24px;
-    color: #FF4500;
+    color: #FF4500; /* Orange color for the total price */
 }
-
 
 
