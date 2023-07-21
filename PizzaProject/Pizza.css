@@ -36,7 +36,7 @@ div {
 .column {
     flex: 1;
     padding: 10px;
-    max-width: 200px; /* Adjust the max-width as needed */
+    max-width: 200px;
 }
 
 .column-left {
@@ -74,5 +74,3 @@ div {
 #totalPrice {
     color: darkgreen;
 }
-
-
