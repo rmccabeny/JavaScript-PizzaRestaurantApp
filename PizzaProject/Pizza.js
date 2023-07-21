@@ -1,4 +1,3 @@
-var quantity = 0; // Declare quantity as a global variable
 var selectedSize; // Declare selectedSize as a global variable
 
 function getReceipt() {
@@ -6,12 +5,12 @@ function getReceipt() {
   var runningTotal = 0;
   var sizeTotal = 0;
 
-  var sizeArray = document.getElementsByClassName("size");
+  var sizeArray = document.getElementsByName("size");
   for (var i = 0; i < sizeArray.length; i++) {
     if (sizeArray[i].checked) {
       selectedSize = sizeArray[i].value;
-      console.log("Selected Size: " + selectedSize)
-      text1 = text1 + selectedSize + "<br>";
+      console.log("Selected Size: " + selectedSize);
+      text1 = text1 + sizeArray[i].value + "<br>";
 
       if (selectedSize === "Personal Pizza") {
         sizeTotal += 6;
@@ -32,7 +31,7 @@ function getReceipt() {
   console.log("size text1: " + text1);
   console.log("subtotal: $" + runningTotal + ".00");
 
-  // these variables will get passed on to each function
+  // Call the getTopping function to handle toppings and their quantities
   getTopping(runningTotal, text1);
 }
 
@@ -49,7 +48,7 @@ function getTopping(runningTotal, text1) {
   }
 
   // Add the pizza quantity to the runningTotal
-  runningTotal += sizeTotal * pizzaQuantity;
+  runningTotal += pizzaQuantity * sizeTotal;
   text1 += pizzaQuantity + " " + selectedSize + " Pizza(s)<br>";
 
   var toppingArray = document.getElementsByName("toppings");
@@ -78,3 +77,4 @@ function getTopping(runningTotal, text1) {
   document.getElementById("showText").innerHTML = text1;
   document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
 }
+
