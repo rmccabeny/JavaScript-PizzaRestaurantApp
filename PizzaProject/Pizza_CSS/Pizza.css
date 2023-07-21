@@ -29,9 +29,16 @@ div {
     margin: 10px auto;
 }
 
+.menu {
+    float: left; /* Add this to float the elements to the left */
+    width: 30%; /* Adjust the width as per your preference */
+    padding: 10px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
 #frmMenu {
-    width: 600px;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 #totalPrice {
@@ -41,10 +48,6 @@ div {
     float: right;
     color: darkgreen;
 }
-
-
-
-
 
 #showText {
     width: 200px;
@@ -69,5 +72,7 @@ div {
     margin: 10px 0 0 100px;
     width: 120px;
     height: 40px;
+    margin-left: -200px;
+    margin-top: 50px;
     display: block;
 }
