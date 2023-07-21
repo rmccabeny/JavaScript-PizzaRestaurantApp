@@ -30,10 +30,22 @@ div {
 }
 
 .menu {
-    float: left; /* Add this to float the elements to the left */
-    width: 30%; /* Adjust the width as per your preference */
-    padding: 10px; /* Add some padding for spacing */
-    box-sizing: border-box; /* Include padding in the total width */
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.menu.left {
+    text-align: left;
+}
+
+.menu.center {
+    text-align: center;
+}
+
+.menu.right {
+    text-align: right;
 }
 
 #frmMenu {
