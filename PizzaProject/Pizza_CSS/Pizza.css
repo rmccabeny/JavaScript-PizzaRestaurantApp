@@ -42,14 +42,9 @@ body {
     color: darkgreen;
   }
   
-  .menu-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  
   
   .menu {
-    width: 30%;
     padding: 10px;
     box-sizing: border-box;
   }
