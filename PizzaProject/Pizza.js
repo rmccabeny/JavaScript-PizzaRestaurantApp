@@ -1,38 +1,40 @@
 function getReceipt() {
     var text1 = "<h3>You ordered:</h3>";
     var runningTotal = 0;
-    // This initializes our string so it can get passed from
-    // function to function, growing line by line into a full receipt
-    var sizeArray = document.getElementsByName("size");
+    var sizeTotal = 0; // Declare sizeTotal here
+  
+    var sizeArray = document.getElementsByClassName("size");
+    var selectedSize;
+  
     for (var i = 0; i < sizeArray.length; i++) {
       if (sizeArray[i].checked) {
-        var selectedSize = sizeArray[i].value;
-        var quantity = parseInt(document.getElementById("qty_" + sizeArray[i].id).value, 10);
-        text1 = text1 + quantity + " " + selectedSize + "<br>";
+        selectedSize = sizeArray[i].value;
+        text1 = text1 + selectedSize + "<br>";
   
-        // Adjust the sizeTotal based on quantity
+        // Move these conditional statements inside the checked block
         if (selectedSize === "Personal Pizza") {
-          runningTotal += 6 * quantity;
+          sizeTotal = 6;
         } else if (selectedSize === "Small Pizza") {
-          runningTotal += 8 * quantity;
+          sizeTotal = 8;
         } else if (selectedSize === "Medium Pizza") {
-          runningTotal += 10 * quantity;
+          sizeTotal = 10;
         } else if (selectedSize === "Large Pizza") {
-          runningTotal += 14 * quantity;
+          sizeTotal = 14;
         } else if (selectedSize === "Extra Large Pizza") {
-          runningTotal += 16 * quantity;
+          sizeTotal = 16;
         }
       }
     }
-
-    //This statement keeps a running total of purchases before toppings
+  
     runningTotal = sizeTotal;
-    console.log(selectedSize+" = $"+runningTotal+".00");
-    console.log("size text1: "+text1);
-    console.log("subtotal: $"+runningTotal+".00");
+    console.log(selectedSize + " = $" + runningTotal + ".00");
+    console.log("size text1: " + text1);
+    console.log("subtotal: $" + runningTotal + ".00");
+  
     // these variables will get passed on to each function
-    getTopping(runningTotal,text1);
-};
+    getTopping(runningTotal, text1);
+  }
+  
 function getTopping(runningTotal, text1) {
     var selectedTopping = [];
   
