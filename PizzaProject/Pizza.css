@@ -31,7 +31,6 @@ input[type="number"] {
     width: 600px;
     height: 470px;
     margin: 10px auto;
-    display: flex; /* Use flexbox layout */
 }
 
 #frmMenu {
@@ -39,23 +38,23 @@ input[type="number"] {
 }
 
 .column {
-    flex: 1; /* Allow columns to grow and shrink equally */
+    width: 30%;
     padding: 10px;
+    float: left;
     box-sizing: border-box;
-    max-width: 200px;
-    text-align: center; /* Common styles for all columns */
+    text-align: center;
 }
 
 .column-left {
-    text-align: left; /* Override for left column */
+    text-align: left;
 }
 
 .column-center {
-    text-align: center; /* Override for center column */
+    text-align: center;
 }
 
 .column-right {
-    text-align: right; /* Override for right column */
+    text-align: right;
 }
 
 #btnOrder {
@@ -81,4 +80,5 @@ input[type="number"] {
 #totalPrice {
     color: darkgreen;
 }
+
 
