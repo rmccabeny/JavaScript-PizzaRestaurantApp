@@ -31,6 +31,7 @@ input[type="number"] {
     width: 600px;
     height: 470px;
     margin: 10px auto;
+    display: flex; /* Use flexbox layout */
 }
 
 #frmMenu {
@@ -38,9 +39,8 @@ input[type="number"] {
 }
 
 .column {
-    width: 30%;
+    flex: 1; /* Allow columns to grow and shrink equally */
     padding: 10px;
-    float: left;
     box-sizing: border-box;
     max-width: 200px;
     text-align: center; /* Common styles for all columns */
@@ -81,3 +81,4 @@ input[type="number"] {
 #totalPrice {
     color: darkgreen;
 }
+
