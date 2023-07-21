@@ -31,39 +31,16 @@ body {
   
   #frmMenu {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .column {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
+    flex: 0 0 calc(33.33% - 20px);
     padding: 10px;
-  }
-  
- 
-  
-  #totalPrice {
-    width: 200px;
-    height: 190px;
-    margin: 20px auto;
-    float: right;
-    color: darkgreen;
-  }
-  
-  #showText {
-    width: 200px;
-    height: 190px;
-    margin: 0 auto;
-    float: left;
-    color: darkgreen;
-    font-weight: bold;
-  }
-  
-  #cart {
-    top: 0;
-    margin: 0 auto;
-    width: 400px;
-    height: 200px;
+    box-sizing: border-box;
   }
   
   #btnOrder {
@@ -77,26 +54,26 @@ body {
     margin-top: 50px;
     display: block;
   }
-
-  /* Existing CSS styles */
-
-/* Add CSS for each column */
-.menu.column-left {
-    width: 30%; /* Adjust the width of the left column */
-    padding: 10px;
-    box-sizing: border-box;
+  
+  #cart {
+    top: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
   }
   
-  .menu.column-center {
-    width: 30%; /* Adjust the width of the center column */
-    padding: 10px;
-    box-sizing: border-box;
+  #showText {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    color: darkgreen;
+    font-weight: bold;
   }
   
-  .menu.column-right {
-    width: 30%; /* Adjust the width of the right column */
-    padding: 10px;
-    box-sizing: border-box;
+  #totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 20px auto;
+    color: darkgreen;
   }
-  
   
