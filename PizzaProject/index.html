@@ -13,7 +13,7 @@
         <h1>Mario's Pizza</h1>
         <br>
         <form id="frmMenu">
-            <div class="column column-left">
+            <div class="column">
                 <h3>Size: &nbsp;&nbsp;&nbsp; Qty</h3>
                 <div>
                     <input type="radio" id="personal" name="size" value="Personal Pizza">
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="column column-center">
+            <div class="column">
                 <h3>Meats: &nbsp;&nbsp;&nbsp; Qty</h3>
                 <div>
                     <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="column column-right">
+            <div class="column">
                 <h3>Vegetables: &nbsp;&nbsp;&nbsp; Qty</h3>
                 <div>
                     <input type="checkbox" id="green_peppers" name="toppings" value="Green Peppers">
@@ -110,6 +110,7 @@
                 </div>
             </div>
 
+            <div style="clear: both;"></div>
             <div style="text-align: center;">
                 <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
                 <br><br>
@@ -125,3 +126,4 @@
 </body>
 
 </html>
+
