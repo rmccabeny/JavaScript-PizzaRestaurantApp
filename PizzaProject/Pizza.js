@@ -34,8 +34,6 @@ function getReceipt() {
   getTopping(runningTotal, text1);
 }
 
-  
-  
 function getTopping(runningTotal, text1) {
     var selectedTopping = [];
     var pizzaQuantity = 0; // Initialize pizza quantity
@@ -78,4 +76,6 @@ function getTopping(runningTotal, text1) {
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
   }
+   
   
+
