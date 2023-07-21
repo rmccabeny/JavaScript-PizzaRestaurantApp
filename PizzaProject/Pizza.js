@@ -43,13 +43,13 @@ function getTopping(runningTotal, text1) {
   for (var i = 0; i < sizeArray.length; i++) {
     if (sizeArray[i].checked) {
       pizzaQuantity = parseInt(document.getElementById("qty_" + sizeArray[i].id).value, 10);
+      text1 += pizzaQuantity + " " + sizeArray[i].value + " Pizza(s)<br>";
       break; // Stop the loop since we found the selected size
     }
   }
 
   // Add the pizza quantity to the runningTotal
-  runningTotal += pizzaQuantity * sizeTotal;
-  text1 += pizzaQuantity + " " + selectedSize + " Pizza(s)<br>";
+  runningTotal *= pizzaQuantity;
 
   var toppingArray = document.getElementsByName("toppings");
   for (var j = 0; j < toppingArray.length; j++) {
