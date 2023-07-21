@@ -1,121 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Mario's Pizza</title>
-  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css"/>
+    <title>Mario's Pizza</title>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css" />
 </head>
+
 <body>
-  <div id="menuBG">
-    <h1 style="margin:0 0px 0 20px;">Mario's Pizza</h1>
-    <br>
-    <form id="frmMenu">
-      <div class="menu column-left">
-        <h3>Choose Size: &nbsp;&nbsp;&nbsp; Qty</h3>
-        <div>
-          <input type="radio" id="personal" name="size" value="Personal Pizza">
-          <label for="personal">Personal Pizza</label>&nbsp;
-          <input type="number" id="qty_personal" name="qty_personal" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="radio" id="small" name="size" value="Small Pizza">
-          <label for="small">Small Pizza</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_small" name="qty_small" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="radio" id="medium" name="size" value="Medium Pizza">
-          <label for="medium">Medium Pizza</label>&nbsp;&nbsp;
-          <input type="number" id="qty_medium" name="qty_medium" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="radio" id="large" name="size" value="Large Pizza">
-          <label for="large">Large Pizza</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_large" name="qty_large" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="radio" id="extra large" name="size" value="Extra Large Pizza">
-          <label for="extra large">Extra Large Pizza</label>
-          <input type="number" id="qty_extra_large" name="qty_extra_large" value="0" min="0" style="width: 25px;">
-        </div>
-      </div>
-      <div class="menu column-center">
-        <h3>Choose Meats:&nbsp;Qty</h3>
-        <div>
-          <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
-          <label for="pepperoni">Pepperoni</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_pepperoni" name="qty_pepperoni" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="sausage" name="toppings" value="Sausage">
-          <label for="sausage">Sausage</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_sausage" name="qty_sausage" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="canadian_bacon" name="toppings" value="Canadian Bacon">
-          <label for="canadian_bacon">Canadian Bacon</label>&nbsp;
-          <input type="number" id="qty_canadian_bacon" name="qty_canadian_bacon" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="ground_beef" name="toppings" value="Ground Beef">
-          <label for="ground_beef">Ground Beef</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_ground_beef" name="qty_ground_beef" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="meatballs" name="toppings" value="Meatballs">
-          <label for="meatballs">Meatballs</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_meatballs" name="qty_meatballs" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="anchovy" name="toppings" value="Anchovy">
-          <label for="anchovy">Anchovy</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_anchovy" name="qty_anchovy" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="chicken" name="toppings" value="Chicken">
-          <label for="chicken">Chicken</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_chicken" name="qty_chicken" value="0" min="0" style="width: 25px;">
-        </div>
-      </div>
-      <div class="menu column-right">
-        <h3>Choose Vegetables:Qty</h3>
-        <div>
-          <input type="checkbox" id="green_peppers" name="toppings" value="Green Peppers">
-          <label for="green_peppers">Green Peppers</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_green_peppers" name="qty_green_peppers" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="onions" name="toppings" value="Onions">
-          <label for="onions">Onions</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_onions" name="qty_onions" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
-          <label for="mushrooms">Mushrooms</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_mushrooms" name="qty_mushrooms" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="spinach" name="toppings" value="Spinach">
-          <label for="spinach">Spinach</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="number" id="qty_spinach" name="qty_spinach" value="0" min="0" style="width: 25px;">
-        </div>
-        <div>
-          <input type="checkbox" id="banana_peppers" name="toppings" value="Banana Peppers">
-          <label for="banana_peppers">Banana Peppers</label>&nbsp;&nbsp;
-          <input type="number" id="qty_banana_peppers" name="qty_banana_peppers" value="0" min="0" style="width: 25px;">
-          <br><br><br><br>
-        </div>
-      </div>
-      <div>
-        <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
-        <br><br>
-      </div>
-      <div id="cart">
-        <div id="showText"></div>
-        <div id="totalPrice"></div>
-      </div>
-    </form>
-  </div>
-  <script src="Pizza.js"></script>
-</body>
-</html>
+    <div id="menuBG">
+        <h1 style="margin:0 0px 0 20px;">Mario's Pizza</h1>
+        <br>
+        <form id="frmMenu">
+            <div class="column-left">
+                <h3>Choose Size: &nbsp;&nbsp;&nbsp; Qty</h3>
+                <div>
+                    <input type="radio" id="personal" name="size" value="Personal Pizza">
+                    <label for="personal">Personal Pizza</label>&nbsp;
+                    <input type="number" id="qty_personal" name="qty_personal" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="radio" id="small" name="size" value="Small Pizza">
+                    <label for="small">Small Pizza</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_small" name="qty_small" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="radio" id="medium" name="size" value="Medium Pizza">
+                    <label for="medium">Medium Pizza</label>&nbsp;&nbsp;
+                    <input type="number" id="qty_medium" name="qty_medium" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="radio" id="large" name="size" value="Large Pizza">
+                    <label for="large">Large Pizza</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_large" name="qty_large" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="radio" id="extra_large" name="size" value="Extra Large Pizza">
+                    <label for="extra_large">Extra Large Pizza</label>
+                    <input type="number" id="qty_extra_large" name="qty_extra_large" value="0" min="0"
+                        style="width: 25px;">
+                </div>
+            </div>
+            <div class="column-center">
+                <h3>Choose Meats: &nbsp;Qty</h3>
+                <div>
+                    <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                    <label for="pepperoni">Pepperoni</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_pepperoni" name="qty_pepperoni" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+                    <label for="sausage">Sausage</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_sausage" name="qty_sausage" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="canadian_bacon" name="toppings" value="Canadian Bacon">
+                    <label for="canadian_bacon">Canadian Bacon</label>&nbsp;
+                    <input type="number" id="qty_canadian_bacon" name="qty_canadian_bacon" value="0" min="0"
+                        style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="ground_beef" name="toppings" value="Ground Beef">
+                    <label for="ground_beef">Ground Beef</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_ground_beef" name="qty_ground_beef" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="meatballs" name="toppings" value="Meatballs">
+                    <label for="meatballs">Meatballs</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_meatballs" name="qty_meatballs" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="anchovy" name="toppings" value="Anchovy">
+                    <label for="anchovy">Anchovy</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_anchovy" name="qty_anchovy" value="0" min="0" style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="chicken" name="toppings" value="Chicken">
+                    <label for="chicken">Chicken</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_chicken" name="qty_chicken" value="0" min="0" style="width: 25px;">
+                </div>
+            </div>
+            <div class="column-right">
+                <h3>Choose Vegetables: Qty</h3>
+                <div>
+                    <input type="checkbox" id="green_peppers" name="toppings" value="Green Peppers">
+                    <label for="green_peppers">Green Peppers</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="qty_green_peppers" name="qty_green_peppers" value="0" min="0"
+                        style="width: 25px;">
+                </div>
+                <div>
+                    <input type="checkbox" id="onions" name="toppings" value="Onions">
+                    <label for="onions">Onions</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
