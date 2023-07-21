@@ -11,21 +11,25 @@ function getReceipt() {
 
   
     for (var i = 0; i < sizeArray.length; i++) {
-      if (sizeArray[i].checked) {
-        if (selectedSize === "Personal Pizza") {
-            sizeTotal = 6;
-        } else if (selectedSize === "Small Pizza") {
-            sizeTotal = 8;
-        } else if (selectedSize === "Medium Pizza") {
-            sizeTotal = 10;
-        } else if (selectedSize === "Large Pizza") {
-            sizeTotal = 14;
-        } else if (selectedSize === "Extra Large Pizza") {
-            sizeTotal = 16;
-        }
-        }
-        selectedSize = sizeArray[i].value;
+      if (sizeArray[i],checked) {
+        var selectedSize = sizeArray[i].value;
         text1 = text1 + selectedSize + "<br>";
+         // Adjust the sizeTotal based on quantity
+      if (selectedSize === "Personal Pizza") {
+        runningTotal += 6 * quantity;
+      } else if (selectedSize === "Small Pizza") {
+        runningTotal += 8 * quantity;
+      } else if (selectedSize === "Medium Pizza") {
+        runningTotal += 10 * quantity;
+      } else if (selectedSize === "Large Pizza") {
+        runningTotal += 14 * quantity;
+      } else if (selectedSize === "Extra Large Pizza") {
+        runningTotal += 16 * quantity;
+      }
+    }
+  }
+      }
+       
         // Move these conditional statements inside the checked block
         
         
@@ -37,7 +41,7 @@ function getReceipt() {
   
     // these variables will get passed on to each function
     getTopping(runningTotal, text1);
-  }
+  
   
 function getTopping(runningTotal, text1) {
     var selectedTopping = [];
@@ -69,4 +73,4 @@ function getTopping(runningTotal, text1) {
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
         runningTotal+".00"+"</strong></h3>";
     }
-}
+
