@@ -42,16 +42,9 @@ div {
     color: darkgreen;
 }
 
-.menu-container {
-    display: flex;
-    justify-content: space-between;
-}
 
-.menu {
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+
+
 
 #showText {
     width: 200px;
