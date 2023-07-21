@@ -61,7 +61,7 @@ body {
     height: 200px;
   }
   
-  .menu.right #btnOrder {
+ #btnOrder {
     font-weight: bold;
     font-size: medium;
     font-family: Open-Sans;
