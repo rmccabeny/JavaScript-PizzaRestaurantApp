@@ -77,4 +77,11 @@ body {
     margin-top: 50px;
     display: block;
   }
+
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
   
