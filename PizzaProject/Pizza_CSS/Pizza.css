@@ -69,9 +69,11 @@ div {
   font-weight: bold;
   font-size: medium;
   font-family: Open-Sans;
-  margin: 10px auto; /* Adjusted to be centered */
+  margin: 10px 0 0 100px;
   width: 120px;
   height: 40px;
+  margin-left: -200px;
+  margin-top: 50px;
   display: block;
 }
 
@@ -95,5 +97,3 @@ div {
   padding: 10px;
   box-sizing: border-box;
 }
-
-  
