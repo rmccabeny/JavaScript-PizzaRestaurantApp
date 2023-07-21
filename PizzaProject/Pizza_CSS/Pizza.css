@@ -42,9 +42,17 @@ body {
     color: darkgreen;
   }
   
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
   
+  .menu {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
   
- 
   #showText {
     width: 200px;
     height: 190px;
@@ -61,17 +69,13 @@ body {
     height: 200px;
   }
   
- #btnOrder {
+  #btnOrder {
     font-weight: bold;
     font-size: medium;
     font-family: Open-Sans;
     margin: 10px 0 0 100px;
     width: 120px;
     height: 40px;
-    margin-left: -200px;
-    margin-top: 50px;
     display: block;
   }
-
-  
   
