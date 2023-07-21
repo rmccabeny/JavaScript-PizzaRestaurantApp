@@ -29,12 +29,7 @@ div {
     margin: 10px auto;
 }
 
-.menu {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+
 
 .menu.left {
     text-align: left;
