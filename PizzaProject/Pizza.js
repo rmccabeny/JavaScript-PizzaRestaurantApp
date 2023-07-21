@@ -38,32 +38,44 @@ function getReceipt() {
   
 function getTopping(runningTotal, text1) {
     var selectedTopping = [];
+    var pizzaQuantity = 0; // Initialize pizza quantity
+  
+    var sizeArray = document.getElementsByName("size");
+    for (var i = 0; i < sizeArray.length; i++) {
+      if (sizeArray[i].checked) {
+        pizzaQuantity = parseInt(document.getElementById("qty_" + sizeArray[i].id).value, 10);
+        break; // Stop the loop since we found the selected size
+      }
+    }
+  
+    // Add the pizza quantity to the runningTotal
+    runningTotal += sizeTotal * pizzaQuantity;
+    text1 += pizzaQuantity + " " + selectedSize + " Pizza(s)<br>";
   
     var toppingArray = document.getElementsByName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
       if (toppingArray[j].checked) {
-        var quantity = parseInt(document.getElementById("qty_" + toppingArray[j].id).value, 10);
-        for (var k = 0; k < quantity; k++) {
+        var toppingQuantity = parseInt(document.getElementById("qty_" + toppingArray[j].id).value, 10);
+        for (var k = 0; k < toppingQuantity; k++) {
           selectedTopping.push(toppingArray[j].value);
-          text1 = text1 + quantity + " " + toppingArray[j].value + "<br>";
+          text1 = text1 + toppingQuantity + " " + toppingArray[j].value + "<br>";
           runningTotal += 1; // Each topping costs 1
         }
       }
     }
-
+  
     var toppingCount = selectedTopping.length;
-    if (toppingCount > 1)   {
-        toppingTotal = (toppingCount - 1);
-    } else {
-        toppingTotal = 0;
+    var toppingTotal = 0;
+    if (toppingCount > 1) {
+      toppingTotal = (toppingCount - 1);
     }
+  
     runningTotal = (runningTotal + toppingTotal);
-    console.log("total selected topping items: "+toppingCount);
-    console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
-    console.log("topping text1: "+text1);
-    console.log("Purchase Total: "+"$"+runningTotal+".00");
-    document.getElementById("showText").innerHTML=text1;
-    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
-        runningTotal+".00"+"</strong></h3>";
-    }
-
+    console.log("total selected topping items: " + toppingCount);
+    console.log(toppingCount + " topping - 1 free topping = $" + toppingTotal + ".00");
+    console.log("topping text1: " + text1);
+    console.log("Purchase Total: $" + runningTotal + ".00");
+    document.getElementById("showText").innerHTML = text1;
+    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
+  }
+  
