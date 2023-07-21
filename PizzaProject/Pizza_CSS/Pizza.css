@@ -30,17 +30,39 @@ body {
   }
   
   #frmMenu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 600px;
+    height: 200px;
   }
   
-  .column {
-    flex: 0 0 calc(33.33% - 20px);
+  .menu {
+    float: left;
+    width: 30%;
     padding: 10px;
     box-sizing: border-box;
+  }
+  
+  #totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 20px auto;
+    float: right;
+    color: darkgreen;
+  }
+  
+  #showText {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: left;
+    color: darkgreen;
+    font-weight: bold;
+  }
+  
+  #cart {
+    top: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
   }
   
   #btnOrder {
@@ -55,25 +77,24 @@ body {
     display: block;
   }
   
-  #cart {
-    top: 0;
-    margin: 0 auto;
-    width: 400px;
-    height: 200px;
+  .column-left {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
-  #showText {
-    width: 200px;
-    height: 190px;
-    margin: 0 auto;
-    color: darkgreen;
-    font-weight: bold;
+  .column-center {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
-  #totalPrice {
-    width: 200px;
-    height: 190px;
-    margin: 20px auto;
-    color: darkgreen;
+  .column-right {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
