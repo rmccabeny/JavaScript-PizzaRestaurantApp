@@ -37,17 +37,17 @@ div {
 
 .column-left {
     text-align: left;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .column-center {
     text-align: center;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .column-right {
     text-align: right;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 #btnOrder {
