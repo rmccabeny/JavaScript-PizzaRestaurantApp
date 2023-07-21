@@ -1,7 +1,7 @@
 body    {
     background-image: url("/images/pizza_background.jpg");
     background-repeat: no-repeat;
-    
+    background-size: cover;
     }
 
 h1 {
