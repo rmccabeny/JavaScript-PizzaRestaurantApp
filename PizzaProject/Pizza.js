@@ -5,26 +5,29 @@ function getReceipt() {
   
     var sizeArray = document.getElementsByClassName("size");
     var selectedSize;
+
+    // Move these conditional statements inside the checked block
+    if (selectedSize === "Personal Pizza") {
+        sizeTotal = 6;
+      } else if (selectedSize === "Small Pizza") {
+        sizeTotal = 8;
+      } else if (selectedSize === "Medium Pizza") {
+        sizeTotal = 10;
+      } else if (selectedSize === "Large Pizza") {
+        sizeTotal = 14;
+      } else if (selectedSize === "Extra Large Pizza") {
+        sizeTotal = 16;
+      }
+    }
+
+
   
     for (var i = 0; i < sizeArray.length; i++) {
       if (sizeArray[i].checked) {
         selectedSize = sizeArray[i].value;
         text1 = text1 + selectedSize + "<br>";
   
-        // Move these conditional statements inside the checked block
-        if (selectedSize === "Personal Pizza") {
-          sizeTotal = 6;
-        } else if (selectedSize === "Small Pizza") {
-          sizeTotal = 8;
-        } else if (selectedSize === "Medium Pizza") {
-          sizeTotal = 10;
-        } else if (selectedSize === "Large Pizza") {
-          sizeTotal = 14;
-        } else if (selectedSize === "Extra Large Pizza") {
-          sizeTotal = 16;
-        }
-      }
-    }
+        
   
     runningTotal = sizeTotal;
     console.log(selectedSize + " = $" + runningTotal + ".00");
@@ -64,5 +67,5 @@ function getTopping(runningTotal, text1) {
     document.getElementById("showText").innerHTML=text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
         runningTotal+".00"+"</strong></h3>";
+    }
 }
-
