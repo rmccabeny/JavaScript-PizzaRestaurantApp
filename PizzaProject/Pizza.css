@@ -3,7 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: green;
-   
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -52,10 +53,12 @@ input[type="number"] {
 .column div {
     display: flex;
     align-items: center;
+    white-space: nowrap; /* Prevent line break between label and input */
 }
 
 .column input[type="checkbox"],
 .column input[type="radio"] {
     margin-right: 5px;
 }
+
 
