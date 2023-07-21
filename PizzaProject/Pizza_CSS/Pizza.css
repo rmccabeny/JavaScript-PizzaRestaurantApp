@@ -31,17 +31,17 @@ div {
 
 
 
-.menu.left {
+.column.left {
     text-align: left;
     
 }
 
-.menu.center {
+.column.center {
     text-align: center;
     
 }
 
-.menu.right {
+.column.right {
     text-align: right;
     
 }
