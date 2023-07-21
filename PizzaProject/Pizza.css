@@ -61,4 +61,38 @@ input[type="number"] {
     margin-right: 5px;
 }
 
+/* Add the missing CSS for the .btnOrder class */
+#btnOrder {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#btnOrder:hover {
+    background-color: #45a049;
+}
+
+/* Add the missing CSS for #showText and #totalPrice elements */
+#showText {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+#totalPrice {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    color: #FF4500; /* Orange color for the total price */
+}
+
+
 
