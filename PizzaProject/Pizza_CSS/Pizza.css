@@ -1,99 +1,99 @@
 body {
-    background-image: url("../images/pizza_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: green;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  
-  h1 {
-    font-family: "Montserrat", Gadget, sans-serif;
-    color: red;
-    text-align: center;
-  }
-  
-  h3 {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: darkgreen;
-  }
-  
-  div {
-    font-family: "Montserrat", Geneva, sans-serif;
-    color: #FFF0F5;
-  }
-  
-  #menuBG {
-    width: 600px;
-    height: 470px;
-    margin: 10px auto;
-  }
-  
-  #frmMenu {
-    width: 600px;
-    height: 200px;
-  }
-  
-  .menu {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  #totalPrice {
-    width: 200px;
-    height: 190px;
-    margin: 20px auto;
-    float: right;
-    color: darkgreen;
-  }
-  
-  #showText {
-    width: 200px;
-    height: 190px;
-    margin: 0 auto;
-    float: left;
-    color: darkgreen;
-    font-weight: bold;
-  }
-  
-  #cart {
-    top: 0;
-    margin: 0 auto;
-    width: 400px;
-    height: 200px;
-  }
-  
-  #btnOrder {
-    font-weight: bold;
-    font-size: medium;
-    font-family: Open-Sans;
-    margin: 10px auto; /* Adjusted to be centered */
-    width: 120px;
-    height: 40px;
-    display: block;
-  }
-  
-  .column-left {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .column-center {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .column-right {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
+  background-image: url("../images/pizza_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: "Montserrat", Gadget, sans-serif;
+  color: red;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: darkgreen;
+}
+
+div {
+  font-family: "Montserrat", Geneva, sans-serif;
+  color: #FFF0F5;
+}
+
+#menuBG {
+  width: 600px;
+  height: 470px;
+  margin: 10px auto;
+}
+
+#frmMenu {
+  width: 600px;
+  height: 200px;
+}
+
+.menu {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#totalPrice {
+  width: 200px;
+  height: 190px;
+  margin: 20px auto;
+  float: right;
+  color: darkgreen;
+}
+
+#showText {
+  width: 200px;
+  height: 190px;
+  margin: 0 auto;
+  float: left;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+#cart {
+  top: 0;
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+}
+
+#btnOrder {
+  font-weight: bold;
+  font-size: medium;
+  font-family: Open-Sans;
+  margin: 10px auto; /* Adjusted to be centered */
+  width: 120px;
+  height: 40px;
+  display: block;
+}
+
+.column-left {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.column-center {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.column-right {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
   
