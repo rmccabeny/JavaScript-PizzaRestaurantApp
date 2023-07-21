@@ -31,11 +31,6 @@ div {
     justify-content: space-around;
 }
 
-.column {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-}
 
 .column-left {
     text-align: left;
