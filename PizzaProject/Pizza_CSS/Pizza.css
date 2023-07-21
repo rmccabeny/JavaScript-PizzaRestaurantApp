@@ -44,12 +44,7 @@ body {
   
   
   
-  .menu {
-    width: 50%;
-    padding: 30px;
-    box-sizing: border-box;
-  }
-  
+ 
   #showText {
     width: 200px;
     height: 190px;
@@ -78,10 +73,5 @@ body {
     display: block;
   }
 
-  .menu-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
   
   
