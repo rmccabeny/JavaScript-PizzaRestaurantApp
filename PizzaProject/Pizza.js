@@ -1,40 +1,39 @@
+var quantity = 0; // Declare quantity as a global variable
+
 function getReceipt() {
-    var text1 = "<h3>You ordered:</h3>";
-    var runningTotal = 0;
-    var sizeTotal = 0; // Declare sizeTotal here
-  
-    var sizeArray = document.getElementsByClassName("size");
-    for (var i = 0; i < sizeArray.length; i++) {
-      if (sizeArray[i],checked) {
-        var selectedSize = sizeArray[i].value;
-        text1 = text1 + selectedSize + "<br>";
-         // Adjust the sizeTotal based on quantity
+  var text1 = "<h3>You ordered:</h3>";
+  var runningTotal = 0;
+  var sizeTotal = 0;
+
+  var sizeArray = document.getElementsByClassName("size");
+  for (var i = 0; i < sizeArray.length; i++) {
+    if (sizeArray[i].checked) {
+      var selectedSize = sizeArray[i].value;
+      text1 = text1 + selectedSize + "<br>";
+
       if (selectedSize === "Personal Pizza") {
-        runningTotal += 6 * quantity;
+        sizeTotal += 6;
       } else if (selectedSize === "Small Pizza") {
-        runningTotal += 8 * quantity;
+        sizeTotal += 8;
       } else if (selectedSize === "Medium Pizza") {
-        runningTotal += 10 * quantity;
+        sizeTotal += 10;
       } else if (selectedSize === "Large Pizza") {
-        runningTotal += 14 * quantity;
+        sizeTotal += 14;
       } else if (selectedSize === "Extra Large Pizza") {
-        runningTotal += 16 * quantity;
+        sizeTotal += 16;
       }
     }
   }
+
+  runningTotal = sizeTotal;
+  console.log(selectedSize + " = $" + runningTotal + ".00");
+  console.log("size text1: " + text1);
+  console.log("subtotal: $" + runningTotal + ".00");
+
+  // these variables will get passed on to each function
+  getTopping(runningTotal, text1);
 }
-       
-       
-        
-        
-  
-    runningTotal = sizeTotal;
-    console.log(selectedSize + " = $" + runningTotal + ".00");
-    console.log("size text1: " + text1);
-    console.log("subtotal: $" + runningTotal + ".00");
-  
-    // these variables will get passed on to each function
-    getTopping(runningTotal, text1);
+
   
   
 function getTopping(runningTotal, text1) {
