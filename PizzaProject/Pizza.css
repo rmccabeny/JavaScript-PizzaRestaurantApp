@@ -51,13 +51,15 @@ input[type="number"] {
 }
 
 .item {
-    /* Add margin to separate items from quantity boxes */
-    margin-bottom: 8px;
-
     /* Use flex properties to align items and quantity boxes side by side */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    white-space: nowrap; /* Prevent line breaks within the item and quantity box container */
+}
+
+.item label {
+    flex: 1; /* Allow the label to take up the remaining space */
 }
 
 /* Move the quantity boxes to the right using margin-left */
@@ -95,4 +97,5 @@ input[type="number"] {
     font-size: 24px;
     color: #FF4500; /* Orange color for the total price */
 }
+
 
