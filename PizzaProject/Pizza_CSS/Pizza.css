@@ -33,14 +33,17 @@ div {
 
 .menu.left {
     text-align: left;
+    width: 30%;
 }
 
 .menu.center {
     text-align: center;
+    width: 30%;
 }
 
 .menu.right {
     text-align: right;
+    width: 30%;
 }
 
 #frmMenu {
