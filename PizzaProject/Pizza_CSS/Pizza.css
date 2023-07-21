@@ -25,8 +25,7 @@ div {
 }
 
 .menu {
-    float: left; /* Add this to float the elements to the left */
-    width: 30%; /* Adjust the width as per your preference */
+    
     padding: 10px; /* Add some padding for spacing */
     box-sizing: border-box; /* Include padding in the total width */
   }
@@ -103,4 +102,11 @@ div {
     display: block;
     }
       
+
+/* Add new styles for the container of the .menu elements */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Set the container width to fill the available space */
+  }
 
