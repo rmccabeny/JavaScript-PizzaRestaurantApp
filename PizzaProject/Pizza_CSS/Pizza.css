@@ -5,71 +5,71 @@ body {
     background-color: green;
     margin-top: 100px;
     margin-bottom: 100px;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-family: "Montserrat", Gadget, sans-serif;
     color: red;
     text-align: center;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: darkgreen;
-  }
-  
-  div {
+}
+
+div {
     font-family: "Montserrat", Geneva, sans-serif;
     color: #FFF0F5;
-  }
-  
-  #menuBG {
+}
+
+#menuBG {
     width: 600px;
     height: 470px;
     margin: 10px auto;
-  }
-  
-  #frmMenu {
-    width: 200px;
-    height: 200px;
-  }
-  
-  #totalPrice {
+}
+
+#frmMenu {
+    width: 600px;
+    height: auto;
+}
+
+#totalPrice {
     width: 200px;
     height: 190px;
     margin: 20px auto;
     float: right;
     color: darkgreen;
-  }
-  
-  .menu-container {
+}
+
+.menu-container {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .menu {
+}
+
+.menu {
     width: 30%;
     padding: 10px;
     box-sizing: border-box;
-  }
-  
-  #showText {
+}
+
+#showText {
     width: 200px;
     height: 190px;
     margin: 0 auto;
     float: left;
     color: darkgreen;
     font-weight: bold;
-  }
-  
-  #cart {
+}
+
+#cart {
     top: 0;
     margin: 0 auto;
     width: 400px;
     height: 200px;
-  }
-  
-  #btnOrder {
+}
+
+#btnOrder {
     font-weight: bold;
     font-size: medium;
     font-family: Open-Sans;
@@ -77,5 +77,4 @@ body {
     width: 120px;
     height: 40px;
     display: block;
-  }
-  
+}
