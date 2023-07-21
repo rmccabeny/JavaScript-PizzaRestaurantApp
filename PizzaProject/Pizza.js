@@ -1,10 +1,10 @@
 var quantity = 0; // Declare quantity as a global variable
 var selectedSize; // Declare selectedSize as a global variable
+var sizeTotal = 0; // Declare sizeTotal as a global variable
 
 function getReceipt() {
   var text1 = "<h3>You ordered:</h3>";
   var runningTotal = 0;
-  var sizeTotal = 0;
 
   var sizeArray = document.getElementsByClassName("size");
   for (var i = 0; i < sizeArray.length; i++) {
@@ -32,10 +32,10 @@ function getReceipt() {
   console.log("subtotal: $" + runningTotal + ".00");
 
   // these variables will get passed on to each function
-  getTopping(runningTotal, text1);
+  getTopping(runningTotal, text1, sizeTotal);
 }
 
-function getTopping(runningTotal, text1) {
+function getTopping(runningTotal, text1, sizeTotal) {
   var selectedTopping = [];
   var pizzaQuantity = 0; // Initialize pizza quantity
 
