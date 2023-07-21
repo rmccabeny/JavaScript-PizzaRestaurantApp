@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/pizza_background.jpg");
+    background-image: url("/images/pizza_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: green;
@@ -24,30 +24,33 @@ div {
 }
 
 #menuBG {
-    width: 800px;
+    width: 600px;
     height: 470px;
     margin: 10px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.column-left,
-.column-center,
-.column-right {
-    width: 30%;
-    padding: 10px;
+#frmMenu {
+    display: flex;
 }
 
 .column-left {
+    flex: 1;
+    width: 30%;
+    padding: 10px;
     text-align: left;
 }
 
 .column-center {
+    flex: 1;
+    width: 30%;
+    padding: 10px;
     text-align: center;
 }
 
 .column-right {
+    flex: 1;
+    width: 30%;
+    padding: 10px;
     text-align: right;
 }
 
