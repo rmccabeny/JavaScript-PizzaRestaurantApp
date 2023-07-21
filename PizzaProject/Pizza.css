@@ -33,24 +33,20 @@ div {
     display: flex;
 }
 
-.column-left {
+.column {
     flex: 1;
-    width: 30%;
     padding: 10px;
+}
+
+.column-left {
     text-align: left;
 }
 
 .column-center {
-    flex: 1;
-    width: 30%;
-    padding: 10px;
     text-align: center;
 }
 
 .column-right {
-    flex: 1;
-    width: 30%;
-    padding: 10px;
     text-align: right;
 }
 
@@ -77,3 +73,4 @@ div {
 #totalPrice {
     color: darkgreen;
 }
+
