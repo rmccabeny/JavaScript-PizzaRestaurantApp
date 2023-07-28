@@ -18,6 +18,13 @@ h3 {
     color: #FF4500;
 }
 
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4CAF50;
+    text-align: center;
+
+}
+
 div {
     font-family: "Montserrat", Geneva, sans-serif;
     color: #FFF0F5;
