@@ -27,12 +27,18 @@ input[type="number"] {
     width: 25px;
 }
 
+label {
+    display: flex;
+    text-align: justify;
+}
+
 .column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
 }
+
 
 #menuBG {
     width: 600px;
