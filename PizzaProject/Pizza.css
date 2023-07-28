@@ -28,7 +28,9 @@ input[type="number"] {
     width: 25px;
 }
 
-
+.column {
+    width: 50%
+}
 
 
 
