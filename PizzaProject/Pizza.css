@@ -27,6 +27,13 @@ input[type="number"] {
     width: 25px;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
 #menuBG {
     width: 600px;
     height: 470px;
@@ -47,7 +54,8 @@ input[type="number"] {
     /* Add flex properties to create a column layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start (left) of the column */
+    align-items: flex-start;
+    /* Align items to the start (left) of the column */
 }
 
 .item {
@@ -55,11 +63,13 @@ input[type="number"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    white-space: nowrap; /* Prevent line breaks within the item and quantity box container */
+    white-space: nowrap;
+    /* Prevent line breaks within the item and quantity box container */
 }
 
 .item label {
-    flex: 1; /* Allow the label to take up the remaining space */
+    flex: 1;
+    /* Allow the label to take up the remaining space */
 }
 
 /* Move the quantity boxes to the right using margin-left */
@@ -87,15 +97,15 @@ input[type="number"] {
     text-align: center;
     font-family: "Arial", sans-serif;
     font-size: 18px;
-    color:azure;
+    color: azure;
 }
 
 #totalPrice {
     margin-top: 10px;
     text-align: center;
-    font-family: "Arial", sans-serif; /* Add the font-family property */
+    font-family: "Arial", sans-serif;
+    /* Add the font-family property */
     font-size: 24px;
-    color: #FF4500; /* Orange color for the total price */
+    color: #FF4500;
+    /* Orange color for the total price */
 }
-
-
