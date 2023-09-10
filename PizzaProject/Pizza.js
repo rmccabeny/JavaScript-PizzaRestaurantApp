@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var toppingArray = document.getElementsByName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
       if (toppingArray[j].checked) {
-        var toppingQuantity = 1; // Since we're dealing with checkboxes, each checked item counts as 1
+        var toppingQuantity = 1;
         selectedTopping.push(toppingArray[j].value);
         text1 = text1 + toppingQuantity + " " + toppingArray[j].value + "<br>";
         runningTotal += 1; // Each topping costs 1
