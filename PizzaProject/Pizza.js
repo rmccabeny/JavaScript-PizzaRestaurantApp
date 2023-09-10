@@ -43,18 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function getTopping(runningTotal, text1) {
     var selectedTopping = [];
 
-    var sizeArray = document.getElementsByName("size");
-    for (var i = 0; i < sizeArray.length; i++) {
-      if (sizeArray[i].checked) {
-        var pizzaQuantity = 1; // Since we're dealing with radio buttons, it's either selected (1) or not (0)
-        text1 += pizzaQuantity + " " + sizeArray[i].value + " Pizza(s)<br>";
-        break; // Stop the loop since we found the selected size
-      }
-    }
-
-    // Add the pizza quantity to the runningTotal
-    runningTotal *= pizzaQuantity;
-
     var toppingArray = document.getElementsByName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
       if (toppingArray[j].checked) {
@@ -80,4 +68,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
   }
 });
+
 
