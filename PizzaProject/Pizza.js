@@ -33,24 +33,38 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("subtotal: $" + runningTotal + ".00");
 
     // Call the getTopping function to handle toppings and their quantities
-    getTopping(runningTotal, sizeTotal, text1);
+    getTopping(runningTotal, text1);
   }
 
-  function getTopping(runningTotal, sizeTotal, text1) {
+  function getTopping(runningTotal, text1) {
     var selectedTopping = [];
     var pizzaQuantity = 0; // Initialize pizza quantity
+    var sizeTotal = 0; // Initialize sizeTotal
 
     var sizeArray = document.getElementsByName("size");
     for (var i = 0; i < sizeArray.length; i++) {
       if (sizeArray[i].checked) {
         pizzaQuantity = parseInt(document.getElementById("qty_" + sizeArray[i].id).value, 10);
         text1 += pizzaQuantity + " " + sizeArray[i].value + " Pizza(s)<br>";
+
+        // Calculate the cost of the selected pizza size
+        if (sizeArray[i].value === "Personal Pizza") {
+          sizeTotal += 6;
+        } else if (sizeArray[i].value === "Small Pizza") {
+          sizeTotal += 8;
+        } else if (sizeArray[i].value === "Medium Pizza") {
+          sizeTotal += 10;
+        } else if (sizeArray[i].value === "Large Pizza") {
+          sizeTotal += 14;
+        } else if (sizeArray[i].value === "Extra Large Pizza") {
+          sizeTotal += 16;
+        }
         break; // Stop the loop since we found the selected size
       }
     }
 
     // Add the pizza quantity to the runningTotal
-    runningTotal *= pizzaQuantity;
+    runningTotal += sizeTotal * pizzaQuantity;
 
     var toppingArray = document.getElementsByName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
@@ -79,7 +93,3 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
   }
 });
-
-
-
-
