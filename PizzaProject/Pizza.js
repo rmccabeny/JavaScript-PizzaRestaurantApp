@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function getReceipt() {
     var text1 = "<h3>You ordered:</h3>";
     var runningTotal = 0;
-    var sizeTotal = 0;
 
     var sizeArray = document.getElementsByName("size");
     for (var i = 0; i < sizeArray.length; i++) {
@@ -20,36 +19,34 @@ document.addEventListener("DOMContentLoaded", function () {
         text1 = text1 + sizeArray[i].value + "<br>";
 
         if (selectedSize === "Personal Pizza") {
-          sizeTotal += 6;
+          runningTotal += 6;
         } else if (selectedSize === "Small Pizza") {
-          sizeTotal += 8;
+          runningTotal += 8;
         } else if (selectedSize === "Medium Pizza") {
-          sizeTotal += 10;
+          runningTotal += 10;
         } else if (selectedSize === "Large Pizza") {
-          sizeTotal += 14;
+          runningTotal += 14;
         } else if (selectedSize === "Extra Large Pizza") {
-          sizeTotal += 16;
+          runningTotal += 16;
         }
       }
     }
 
-    runningTotal = sizeTotal;
     console.log(selectedSize + " = $" + runningTotal + ".00");
     console.log("size text1: " + text1);
     console.log("subtotal: $" + runningTotal + ".00");
 
     // Call the getTopping function to handle toppings and their quantities
-    getTopping(runningTotal, sizeTotal, text1);
+    getTopping(runningTotal, text1);
   }
 
-  function getTopping(runningTotal, sizeTotal, text1) {
+  function getTopping(runningTotal, text1) {
     var selectedTopping = [];
-    var pizzaQuantity = 0; // Initialize pizza quantity
 
     var sizeArray = document.getElementsByName("size");
     for (var i = 0; i < sizeArray.length; i++) {
       if (sizeArray[i].checked) {
-        pizzaQuantity = parseInt(document.getElementById("qty_" + sizeArray[i].id).value, 10);
+        var pizzaQuantity = 1; // Since we're dealing with radio buttons, it's either selected (1) or not (0)
         text1 += pizzaQuantity + " " + sizeArray[i].value + " Pizza(s)<br>";
         break; // Stop the loop since we found the selected size
       }
@@ -61,12 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var toppingArray = document.getElementsByName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
       if (toppingArray[j].checked) {
-        var toppingQuantity = parseInt(document.getElementById("qty_" + toppingArray[j].id).value, 10);
-        for (var k = 0; k < toppingQuantity; k++) {
-          selectedTopping.push(toppingArray[j].value);
-          text1 = text1 + toppingQuantity + " " + toppingArray[j].value + "<br>";
-          runningTotal += 1; // Each topping costs 1
-        }
+        var toppingQuantity = 1; // Since we're dealing with checkboxes, each checked item counts as 1
+        selectedTopping.push(toppingArray[j].value);
+        text1 = text1 + toppingQuantity + " " + toppingArray[j].value + "<br>";
+        runningTotal += 1; // Each topping costs 1
       }
     }
 
@@ -85,3 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
   }
 });
+
