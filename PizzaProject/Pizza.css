@@ -121,9 +121,3 @@ span {
     color: #FF4500;
     /* Orange color for the total price */
 }
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-}
