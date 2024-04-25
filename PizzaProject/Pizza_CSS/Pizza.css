@@ -1,50 +1,50 @@
-body    {
-    background-image: url("https://imgur.com/WQV2524");
+body {
+    background-image: url('../images/pizza_background.jpg');
     background-color: green;
-    }
+}
 
 h1 {
     font-family: "Arial Black", Gadget, sans-serif;
-    color: red ;
+    color: red;
     text-align: center;
-    }
+}
 
-h3  {
-     font-family: "Trebuchet MS", Helvetica, sans-serif	;
-     color: #E6E6FA;
-     
-    }
+h3 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #E6E6FA;
+
+}
 
 div {
-     font-family: Verdana, Geneva, sans-serif;
-     color: #FFF0F5;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF0F5;
 }
 
 
 
-#menuBG     {
+#menuBG {
     width: 600px;
     height: 470px;
     margin: 10px auto;
-    }
+}
 
-#frmMenu    {
+#frmMenu {
     width: 200px;
     height: 200px;
-    }
+}
 
 #totalPrice {
     width: 200px;
     height: 190px;
     margin: 20px auto;
     float: right;
-    }
+}
 
-.left   {
+.left {
     width: 200px;
     height: 200px;
     float: left;
-    }
+}
 
 .center {
     width: 200px;
@@ -52,29 +52,30 @@ div {
     float: left;
 }
 
-.right  {
+.right {
     width: 200px;
     height: 200px;
     float: right;
-    }
+}
 
-#showText   {
+#showText {
     width: 200px;
     height: 190px;
     margin: 0px auto;
     float: left;
-    }
+}
 
-#cart   {
-    top: 0; margin: 0px auto;
+#cart {
+    top: 0;
+    margin: 0px auto;
     width: 400px;
     height: 200px;
-    }
+}
 
-#btnOrder   {
+#btnOrder {
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
     margin: 25px auto;
     display: block;
-    }
+}
