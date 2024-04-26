@@ -4,13 +4,13 @@ body {
 }
 
 h1 {
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: "system-ui", Gadget, sans-serif;
     color: red;
     text-align: center;
 }
 
 h3 {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "system-ui", Helvetica, sans-serif;
     color: #E6E6FA;
 
 }
@@ -31,6 +31,7 @@ div {
 #frmMenu {
     width: 200px;
     height: 200px;
+    font-family: "roboto", Helvetica, sans-serif;
 }
 
 #totalPrice {
