@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/pizza_background.jpg");
+    background-image: url("~/images/pizza_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: green;
@@ -23,7 +23,7 @@ h2 {
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    color: #ffff00;
+    color: #000;
 
 }
 
@@ -39,7 +39,7 @@ input[type="number"] {
 
 span {
     white-space: pre;
-    color: #4CAF50;
+    color: #fff;
 }
 
 .column {
@@ -53,6 +53,7 @@ span {
     width: 600px;
     height: 470px;
     margin: 10px auto;
+    background-image: url("~/images/pizza_background.jpg");
 }
 
 #frmMenu {
@@ -93,7 +94,7 @@ span {
 }
 
 #btnOrder {
-    background-color: #4CAF50;
+    background-color: slategray;
     color: white;
     padding: 10px 20px;
     border: none;
