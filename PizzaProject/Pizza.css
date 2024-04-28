@@ -11,6 +11,7 @@ h1 {
     font-family: "Archivo Black", Gadget, sans-serif;
     color: #ff0000;
     text-align: center;
+    padding-left: 2rem;
 
 }
 
@@ -18,7 +19,7 @@ h2 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #ffff00;
     text-align: center;
-    padding-left: 2rem;
+    padding-left: 4rem;
 
 }
 
