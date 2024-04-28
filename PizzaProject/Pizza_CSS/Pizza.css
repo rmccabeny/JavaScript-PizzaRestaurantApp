@@ -58,6 +58,10 @@ div {
     float: left;
 }
 
+.item {
+    padding-left: 2rem;
+}
+
 .right {
     width: 200px;
     height: 200px;
