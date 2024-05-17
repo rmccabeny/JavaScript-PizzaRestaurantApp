@@ -15,7 +15,7 @@ h2 {
 
 h3 {
     font-family: "system-ui", Helvetica, sans-serif;
-    color: #E6E6FA;
+    color: red;
     padding-left: 6rem;
 
 }
@@ -60,6 +60,7 @@ div {
 
 .item {
     padding-left: 2rem;
+    color: #000;
 }
 
 .right {
