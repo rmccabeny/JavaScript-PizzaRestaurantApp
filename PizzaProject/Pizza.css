@@ -102,6 +102,7 @@ ul {
     justify-content: space-between;
     white-space: nowrap;
     padding-left: 2rem;
+    color: #000;
     /* Prevent line breaks within the item and quantity box container */
 }
 
@@ -127,7 +128,7 @@ ul {
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-    margin-left: 4rem;
+    margin-left: 3rem;
     text-align: center;
 
 }
@@ -155,7 +156,7 @@ ul {
     text-align: center;
     font-family: "Arial", sans-serif;
     font-size: 18px;
-    color: azure;
+    color: #000;
 }
 
 #totalPrice {
@@ -164,6 +165,6 @@ ul {
     font-family: "Arial", sans-serif;
     /* Add the font-family property */
     font-size: 24px;
-    color: #FF4500;
+    color: #000;
     /* Orange color for the total price */
 }
