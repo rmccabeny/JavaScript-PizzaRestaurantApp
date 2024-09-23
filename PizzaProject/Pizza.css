@@ -26,7 +26,7 @@ h2 {
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    color: #7fff00;
+    color: #fff;
     padding-left: 2rem;
 
 }
@@ -61,6 +61,7 @@ ul {
 .column {
     white-space: nowrap;
     padding-left: 2rem;
+    color: #000;
 }
 
 
@@ -107,6 +108,7 @@ ul {
 .item label {
     flex: 1;
     align-items: center;
+    color: #000
     /* Allow the label to take up the remaining space */
 }
 
