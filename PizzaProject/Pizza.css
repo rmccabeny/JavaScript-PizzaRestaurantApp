@@ -39,7 +39,7 @@ h4 {
 
 div {
     font-family: "Montserrat", Geneva, sans-serif;
-    color: #7fff00;
+    color: #fff
 
 }
 
@@ -55,6 +55,7 @@ span {
 
 ul {
     list-style-type: none;
+    color: #fff;
 }
 
 .column {
